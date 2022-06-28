@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=10">
+        <title>Responsive CV</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="resume_css.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+
+}
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+
+img{
+    border-radius: 80px;
+    
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width:1000px ;
+    min-height: 1000px;
+    margin: 50px;
+    background-color:#fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0,1);
+}
+.container .left_side{
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
+
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0,2);
+}
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius:50% ;
+    overflow: hidden;
+}
+.profileText .imgBx img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.ContactInfo{
+    padding-top: 40px;
+}
+.title{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+.ContactInfo.education li{
+    margin-top: 50px;
+}
+.contactInfo.education h5{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2){
+    color: #fff;
+    font-weight: 500;
+}
+.contactInfo.education h4{
+    color: #fff;
+    font-weight: 300;
+}
+
+.container .right_side{
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+
+}
+.about{
+    margin-bottom: 50px;
+   
+
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.p{
+    color: #333;
+}
+.about .title2{
+    color:#003147 ;
+}
+ .about ul li span{
+    color: #003147;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+} 
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa{
+    color: #03a9f4;
+    font-size: 18px;
+    width: 10px;
+}
+@media(max-width:1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left_side">
+                <div class="profileText">
+                    <div class="imgBx">
+                        <img src="aditya.jpg">
+                    </div>
+                   
+                   <h2>GURRALA ADITYA KUMAR<br><span>Developer</span></h2>
+                </div>
+                <div class="contactInfo">
+                    <h3 class="title">ContactInfo</h3>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="text">+91 8333941789</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></span>
+                            <span class="text">adithyakumar206@gmail.com</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                            <span class="text">https://www.linkedin.com/in/vattimilli-shanmukha-surya-hemanth-546058141/</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span class="text">Tanuku,West godavari,Andhra Pradesh,India</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contactInfo education">
+                    <h3 class="title">Education</h3>
+                    <ul>
+                        <li>
+                            <h5>2017-2020</h5>
+                            <h4>Bachelor Degree in Electrical and Electronics Engineering</h4>
+                            <h4>Board of university- Jntuk</h4>
+                            <h4>Degree grade -7.09</h4>
+                            <h4>DR. Paul Raj Engineering Collage </h4>
+                        </li>
+                        <li>
+                            <h5>2014-2017</h5>
+                            <h4>Diploma in Electrical and Electronics Engineering</h4>
+                            <h4>Board of university-Jntuk </h4>
+                             <h4>Diploma percentage -74.71%</h4>
+                            <h4>SASI Institute Of Technology and Engineering</h4>
+                        </li>
+                        <li>
+                            <h5>2014</h5>
+                            <h4>Tenth standard </h4>
+                            <h4>Bhashyam public school</h4>
+                            <h4>Board of university- State Board</h4>
+                            <h4>Tenth grade-8.3</h4>
+
+                        </li>
+                        <div class="contactInfo personal Details">
+                    <h3 class="title">Personal Details</h3>
+                    <ul>
+                        <li>
+                            <h4>Full name: Gurrala Aditya Kumar </h4>
+                            <h4>Father name : Gurrala Venkata Swamy Naidu </h4>
+                            <h4>Father Occupation: Farmer </h4>
+                            <h4>Mother name: Gurrala Naga Padmaja</h4>
+                            <h4>Mother Occupation: Housewife</h4>
+                            <h4>City: Ravulapalem </h4>
+                            <h4>Village: Komaraju lanka</h4>
+                            <h4>District: East godavari</h4>
+                            <h4>State: Andhra Pradesh </h4>
+                            <h4>Address: 1-28, musleem veedhi, Komaraju lanka, Ravulapalem, East Godavari, Andhara Pradesh- 533238</h4>
+
+                        </li>
+                    </ul>
+                    </ul>
+                </div>
+                 
+            </div>
+
+                <div class="right_side">
+                       <div class="about">
+                           <h2 class="title2">Career Objective</h2>
+                           <p>To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills. Secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company.</p>
+                        </div>
+                       <div class="about"> 
+                           <h2 class="title2">Technical Softwares</h2>
+                           <ul>
+                                <li>Auto Cad</li>  
+                           </ul>
+                       </div>
+                       <div class="about skills">
+                           <h2 class="title2">Web Development</h2>
+                               <ul>
+                                <li>Html</li>
+                                <li>Css</li>
+                                <li>Javascript</li>
+                                <li>Android app development </li>
+
+                               </ul>
+                                </div>
+                       <div class="about skills">
+                           <h2 class="title2">Programming Langauges</h2>
+                               <ul>
+                                <li>Java</li>
+                               </ul>
+                               </div>
+                       <div class="about Internships">
+                           <h2 class="title2">Internships</h2>
+                               <ul>
+                                <li>Diploma Internship- Apex, Kakinada</li>
+                                  Description:Internship about electrical and technical domain
+                                <li>B.tech Industrial vist- GvK Power Plant, Jegurupadu  </li>
+                                Description :  Electrical and technical domain
+                               </ul>
+                                </div>
+                       <div class="about Projects">
+                           <h2 class="title2"> Technical Projects</h2>
+                               <ul>
+                                <li>Diploma project- Construction and Working of Mini Hydro Power Plant by using rain and drain water</li>
+                                Description:This hydro power project gives the electrical energy to the streetlights in the cities.
+                                <li>B.tech Project -Utilization of PV Solar farm for Grid voltage regulation during night analysis and control</li>
+                                Description: A novel concept of the utilization of PV solar farm as a STATCOM for weak gridvoltage regulation 
+                                during nighttime.
+                               </ul>
+                               <div class="about Projects">
+                           <h2 class="title2"> Software  Projects</h2>
+                               <ul>
+                                <li>Responsive CV</li>
+                                Description: Creating a responsive cv with the help of Html, Css and java script
+                                <li>Online quiz</li>
+                                Description: creating online quiz page by using Html and Css.
+                               </ul>
+                       </div>
+                       <div class="about languages">
+                        <h2 class="title2">Languages Known</h3>
+                        <ul>
+                            <li>English</li>
+                            <li>Telugu</li>
+                        </ul>
+                    </div>
+                    <div class="about interest">
+                        <h2 class="title2">My Interests</h3>
+                        <ul>
+                            <li>
+                                <span class="icon"><i class="material-icons" aria-hidden="true"></i></i></span>
+                                <span class="text">cricket</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-cutlery" aria-hidden="true"></i></span>
+                                <span class="text">Cooking</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                                <span class="text">Reading</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                      
+                </div>
+            
+        </div>
+    </body>
+</html>
